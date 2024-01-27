@@ -16,7 +16,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex gap-6">
+    <div className="flex flex-wrap gap-6 px-3">
       <Card className="w-[500px] h-48 bg-[#ee78c7]/30 shadow-lg flex flex-col justify-between overflow-hidden">
         <CardHeader className="mb-auto">
           <CardTitle className="text-white font-bold text-2xl">
@@ -25,10 +25,16 @@ export default function Home() {
         </CardHeader>
         <CardContent className="flex justify-between items-center">
           <span className="font-bold text-8xl text-[#4d0a2f] h-full">6</span>
-          <Image src="/3876654.png" alt="" width={220} height={130} className="flex relative -top-16 left-16 -rotate-12"/>
+          <Image
+            src="/ilustration_calendar.png"
+            alt=""
+            width={220}
+            height={130}
+            className="flex relative -top-16 left-14 -rotate-12"
+          />
         </CardContent>
       </Card>
-      <Card className="flex w-screen h-48 bg-white/30 border border-[#ee78c7]/50 shadow-lg items-center ">
+      <Card className="flex w-[61%] h-48 bg-white/30 border border-[#ee78c7]/50 shadow-lg items-center ">
         <CardContent className="flex w-full px-16 justify-between py-8">
           <div className="">
             <FaCheckCircle size={50} className="text-[#09E19E]" />
@@ -53,6 +59,7 @@ export default function Home() {
           </div>
         </CardContent>
       </Card>
+      <Card className="w-[500px] h-96"></Card>
     </div>
   );
 }

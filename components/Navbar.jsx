@@ -30,61 +30,37 @@ export default function Navbar() {
           </h1>
         </div>
         <div className="flex gap-3 items-center">
-          <IoMdNotificationsOutline size={24} className="hover:size-7 hover:text-[#E344AA] cursor-pointer"/>
+          <IoMdNotificationsOutline
+            size={24}
+            className="hover:size-7 hover:text-[#E344AA] cursor-pointer"
+          />
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Avatar className="cursor-pointer">
                 <AvatarImage src="https://github.com/shadcn.png" />
                 <AvatarFallback>Mzl</AvatarFallback>
-              </Avatar> 
+              </Avatar>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56">
               <DropdownMenuLabel>My Account</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuGroup>
-                <DropdownMenuItem>
-                  Profile
+                <DropdownMenuItem className="focus:bg-[#E344AA] focus:text-white focus:font-bold duration-0">
+                  Perfil
                   <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
                 </DropdownMenuItem>
-                <DropdownMenuItem>
-                  Billing
-                  <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  Settings
+                <DropdownMenuItem className="focus:bg-[#E344AA] focus:text-white focus:font-bold duration-0">
+                  Ajustes
                   <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
                 </DropdownMenuItem>
-                <DropdownMenuItem>
-                  Keyboard shortcuts
-                  <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
+                <DropdownMenuItem className="focus:bg-[#E344AA] focus:text-white focus:font-bold duration-0">
+                  GitHub
+                  <DropdownMenuShortcut>⌘G</DropdownMenuShortcut>
                 </DropdownMenuItem>
               </DropdownMenuGroup>
               <DropdownMenuSeparator />
-              <DropdownMenuGroup>
-                <DropdownMenuItem>Team</DropdownMenuItem>
-                <DropdownMenuSub>
-                  <DropdownMenuSubTrigger>Invite users</DropdownMenuSubTrigger>
-                  <DropdownMenuPortal>
-                    <DropdownMenuSubContent>
-                      <DropdownMenuItem>Email</DropdownMenuItem>
-                      <DropdownMenuItem>Message</DropdownMenuItem>
-                      <DropdownMenuSeparator />
-                      <DropdownMenuItem>More...</DropdownMenuItem>
-                    </DropdownMenuSubContent>
-                  </DropdownMenuPortal>
-                </DropdownMenuSub>
-                <DropdownMenuItem>
-                  New Team
-                  <DropdownMenuShortcut>⌘+T</DropdownMenuShortcut>
-                </DropdownMenuItem>
-              </DropdownMenuGroup>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem>GitHub</DropdownMenuItem>
-              <DropdownMenuItem>Support</DropdownMenuItem>
-              <DropdownMenuItem disabled>API</DropdownMenuItem>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem>
-                Log out
+              <DropdownMenuItem className="focus:bg-red-500/90 focus:text-white focus:font-bold duration-0">
+                Salir
                 <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
               </DropdownMenuItem>
             </DropdownMenuContent>
