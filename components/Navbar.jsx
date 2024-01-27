@@ -42,7 +42,7 @@ export default function Navbar() {
               </Avatar>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56">
-              <DropdownMenuLabel>My Account</DropdownMenuLabel>
+              <DropdownMenuLabel>Cuenta ArangoMzl</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuGroup>
                 <DropdownMenuItem className="focus:bg-[#E344AA] focus:text-white focus:font-bold duration-0">
