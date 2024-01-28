@@ -18,8 +18,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-wrap gap-6 px-3">
-      <Card className="w-[320px] h-48 bg-[#ee78c7]/30 shadow-lg flex flex-col justify-between overflow-hidden">
+    <div className="grid grid-cols-1 md:grid-cols-6 gap-7 px-3">
+      <Card className="col-span-4 md:col-span-2 h-48 bg-[#ee78c7]/30 shadow-lg flex flex-col justify-between overflow-hidden">
         <CardHeader className="mb-auto">
           <CardTitle className="text-white font-bold text-2xl">
             Tareas Restantes
@@ -36,7 +36,7 @@ export default function Home() {
           />
         </CardContent>
       </Card>
-      <Card className="flex w-[74%] h-48 bg-white/30 border border-[#ee78c7]/50 shadow-lg items-center ">
+      <Card className="flex col-span-4 h-48 bg-white/30 border border-[#ee78c7]/50 shadow-lg items-center ">
         <CardContent className="flex w-full px-16 justify-between py-8">
           <div className="">
             <FaCheckCircle size={50} className="text-[#09E19E]" />
@@ -61,7 +61,7 @@ export default function Home() {
           </div>
         </CardContent>
       </Card>
-      <Card className="w-[320px] h-96 bg-[#ee78c7]/30 shadow-lg">
+      <Card className="col-span-4 md:col-span-2 h-96 bg-[#ee78c7]/30 shadow-lg mb-3 md:mb-0">
         <CardHeader className="mb-auto">
           <CardTitle className="text-white font-bold text-2xl">
             Tareas Exitosas

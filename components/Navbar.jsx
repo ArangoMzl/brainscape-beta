@@ -22,9 +22,9 @@ import {
 export default function Navbar() {
   return (
     <header className="py-2 backdrop-blur-md bg-white/30 rounded-full my-2">
-      <div className="flex flex-row justify-between px-6">
+      <div className="flex flex-col items-center md:flex-row justify-between px-6">
         <div className="flex gap-2 text-[#E344AA] items-center">
-          <GiBurningBook size={32} className="cursor-pointer hover:size-10" />
+          <GiBurningBook size={32} className="cursor-pointer hover:size-10 transition-all" />
           <h1 className="text-3xl font-bold ">
             <span className="text-white text-4xl">B</span>RAINDSCAPE
           </h1>
@@ -32,7 +32,7 @@ export default function Navbar() {
         <div className="flex gap-3 items-center">
           <IoMdNotificationsOutline
             size={24}
-            className="hover:size-7 hover:text-[#E344AA] cursor-pointer"
+            className="hover:size-7 hover:text-[#E344AA] cursor-pointer md:flex hidden"
           />
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
